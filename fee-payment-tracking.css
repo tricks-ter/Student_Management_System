@@ -1,0 +1,160 @@
+/* Root variables for theme styling */
+:root {
+    --primary-color: #2C3E50;
+    --secondary-color: #18BC9C;
+    --light-gray: #ecf0f1;
+    --dark-gray: #7f8c8d;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--light-gray);
+    color: var(--primary-color);
+    line-height: 1.6;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+  }
+  header .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  header nav ul li {
+    margin-left: 20px;
+  }
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  header nav ul li a:hover,
+  header nav ul li a.active {
+    color: var(--secondary-color);
+  }
+  
+  /* Main Content Layout */
+  main {
+    width: 90%;
+    margin: 20px auto;
+  }
+  main section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  main section h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 5px;
+  }
+  
+  /* Invoice Dashboard Section */
+  #invoice-dashboard .balance-summary {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  .invoice-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .invoice-item {
+    border: 1px solid var(--dark-gray);
+    padding: 10px;
+    border-radius: 3px;
+    width: 45%;
+    background: #fafafa;
+  }
+  
+  /* Payment Portal Section */
+  #payment-portal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #payment-portal form label {
+    font-weight: bold;
+  }
+  #payment-portal form select,
+  #payment-portal form button {
+    padding: 10px;
+    border: 1px solid var(--dark-gray);
+    border-radius: 3px;
+  }
+  #payment-portal form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #payment-portal form button:hover {
+    background-color: var(--secondary-color);
+  }
+  #paymentConfirmation {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  /* Receipts Section */
+  .receipt-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .receipt-item {
+    border: 1px solid var(--dark-gray);
+    padding: 10px;
+    border-radius: 3px;
+    background: #fafafa;
+  }
+  #exportReceipts {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #exportReceipts:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+  footer .container {
+    width: 90%;
+    margin: auto;
+  }
+  

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grade Book - Student Management System</title>
+  <link rel="stylesheet" href="student-gradebook.css">
+</head>
+<body>
+  <!-- Header with common navigation -->
+  <header>
+    <div class="container">
+      <h1>Student Management System</h1>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="coursereg.html">Course Registration</a></li>
+          <li><a href="student-gradebook.html" class="active">Grade Book</a></li>
+          <li><a href="gradebook.html" >Grade Book</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Overall Grade Section -->
+    <section id="overall-grade">
+      <h2>Overall Grade</h2>
+      <div class="grade-summary">
+        <!-- The overall grade is dynamically updated from JavaScript -->
+        <p id="finalGradeDisplay">--</p>
+      </div>
+    </section>
+
+    <!-- Assignment Breakdown Section -->
+    <section id="assignment-breakdown">
+      <h2>Assignment Grades & Feedback</h2>
+      <table id="assignmentTable">
+        <thead>
+          <tr>
+            <th>Assignment</th>
+            <th>Score</th>
+            <th>Max Score</th>
+            <th>Feedback</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example rows; these are placeholders that can be replaced by dynamic data -->
+          <tr data-assignment-id="1">
+            <td>Midterm Exam</td>
+            <td class="score">85</td>
+            <td>100</td>
+            <td class="feedback">Good performance, but work on time management.</td>
+          </tr>
+          <tr data-assignment-id="2">
+            <td>Project</td>
+            <td class="score">90</td>
+            <td>100</td>
+            <td class="feedback">Excellent use of concepts and implementation.</td>
+          </tr>
+          <!-- Additional assignment rows can be inserted dynamically -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Student Management System. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript integration (logic in student-gradebook.js) -->
+  <script src="student-gradebook.js"></script>
+</body>
+</html>

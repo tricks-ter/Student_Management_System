@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Generation - Student Management System</title>
+  <link rel="stylesheet" href="report-generation.css">
+</head>
+<body>
+  <!-- Header with common navigation -->
+  <header>
+    <div class="container">
+      <h1>Student Management System</h1>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="course-registration.html">Course Registration</a></li>
+          <li><a href="student-gradebook.html">Grade Book</a></li>
+          <li><a href="timetable-view.html">Timetable</a></li>
+          <li><a href="fee-payment-tracking.html">Fee Payment</a></li>
+          <li><a href="report-generation.html" class="active">Report Generation</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Report Builder Section -->
+    <section id="report-builder">
+      <h2>Report Builder</h2>
+      <form id="reportForm">
+        <label for="studentSelect">Select Student(s):</label>
+        <select id="studentSelect" multiple>
+          <option value="stu001">John Doe</option>
+          <option value="stu002">Jane Smith</option>
+          <!-- Additional students loaded dynamically -->
+        </select>
+        <label for="templateSelect">Select Template:</label>
+        <select id="templateSelect">
+          <option value="tpl001">Progress Report Template 1</option>
+          <option value="tpl002">Progress Report Template 2</option>
+          <!-- Additional templates -->
+        </select>
+        <button type="submit" id="generateReport">Generate Report</button>
+      </form>
+      <div id="reportOutput">
+        <!-- Generated report (or a link to download) will be displayed here -->
+      </div>
+    </section>
+
+    <!-- Template Library Section -->
+    <section id="template-library">
+      <h2>Template Library</h2>
+      <div class="template-list">
+        <!-- Sample template items -->
+        <div class="template-item" data-template-id="tpl001">
+          <h3>Progress Report Template 1</h3>
+          <p>Standard academic progress report.</p>
+        </div>
+        <div class="template-item" data-template-id="tpl002">
+          <h3>Progress Report Template 2</h3>
+          <p>Detailed feedback with comments section.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Batch Export Section -->
+    <section id="batch-export">
+      <h2>Batch Export</h2>
+      <button id="exportReports">Export All Reports (PDF/CSV)</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Student Management System. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- JavaScript integration (logic to be implemented in report-generation.js) -->
+  <script src="report-generation.js"></script>
+</body>
+</html>
