@@ -1,4 +1,4 @@
-/* Root variables for theme styling */
+
 :root {
     --primary-color: #2C3E50;
     --secondary-color: #18BC9C;
@@ -7,22 +7,20 @@
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  /* Reset box model and margins */
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Body styles */
   body {
     font-family: var(--font-family);
     background-color: var(--light-gray);
     color: var(--primary-color);
     line-height: 1.6;
   }
-  
-  /* Header styles */
+
   header {
     background-color: var(--primary-color);
     color: #fff;
@@ -55,7 +53,7 @@
     color: var(--secondary-color);
   }
   
-  /* Main content styling */
+ 
   main {
     width: 90%;
     margin: 20px auto;
@@ -73,7 +71,7 @@
     padding-bottom: 5px;
   }
   
-  /* Course Catalog Section */
+ 
   #course-catalog .search-filter {
     display: flex;
     margin-bottom: 15px;
@@ -128,7 +126,7 @@
     background-color: var(--secondary-color);
   }
   
-  /* Registration Wizard Section */
+  
   #registration-wizard .selected-courses {
     border: 1px dashed var(--dark-gray);
     min-height: 100px;
@@ -148,7 +146,7 @@
     background-color: var(--secondary-color);
   }
   
-  /* Conflict Checker Section */
+ 
   #conflict-checker .conflict-alert {
     min-height: 50px;
     padding: 10px;
@@ -158,7 +156,7 @@
     color: #856404;
   }
   
-  /* Footer styles */
+ 
   footer {
     background-color: var(--primary-color);
     color: #fff;

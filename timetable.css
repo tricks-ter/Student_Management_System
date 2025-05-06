@@ -1,4 +1,4 @@
-/* Root variables for theme styling */
+
 :root {
     --primary-color: #2C3E50;
     --secondary-color: #18BC9C;
@@ -7,7 +7,7 @@
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  /* Reset and base styles */
+ 
   * {
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
     line-height: 1.6;
   }
   
-  /* Header Styles */
+ 
   header {
     background-color: var(--primary-color);
     color: #fff;
@@ -53,13 +53,13 @@
     color: var(--secondary-color);
   }
   
-  /* Main Content Layout */
+  
   main {
     width: 90%;
     margin: 20px auto;
   }
   
-  /* Timetable Navigation Tabs */
+ 
   #timetable-nav ul {
     list-style: none;
     display: flex;
@@ -83,7 +83,7 @@
     color: #fff;
   }
   
-  /* Timetable Views */
+  
   .timetable-view {
     display: none;
   }
@@ -91,7 +91,7 @@
     display: block;
   }
   
-  /* Weekly Calendar Styles */
+ 
   .calendar-grid {
     display: grid;
     grid-template-columns: 80px repeat(5, 1fr);
@@ -127,7 +127,7 @@
     font-size: 0.9rem;
   }
   
-  /* List View Table */
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -146,7 +146,7 @@
     background-color: var(--light-gray);
   }
   
-  /* Room Finder */
+  
   #roomSearchForm {
     display: flex;
     margin-bottom: 15px;
@@ -176,7 +176,7 @@
     border-radius: 4px;
   }
   
-  /* Next Class Countdown Section */
+  
   #next-class {
     background: #fff;
     padding: 20px;
@@ -193,7 +193,7 @@
     font-weight: bold;
   }
   
-  /* Footer Styles */
+ 
   footer {
     background-color: var(--primary-color);
     color: #fff;

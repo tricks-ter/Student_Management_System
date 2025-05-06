@@ -1,4 +1,4 @@
-/* Root variables for theme styling */
+
 :root {
     --primary-color: #2C3E50;
     --secondary-color: #18BC9C;
@@ -7,7 +7,7 @@
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  /* Reset and base styles */
+
   * {
     margin: 0;
     padding: 0;
@@ -21,7 +21,7 @@
     line-height: 1.6;
   }
   
-  /* Header Styles */
+
   header {
     background-color: var(--primary-color);
     color: #fff;
@@ -54,7 +54,7 @@
     color: var(--secondary-color);
   }
   
-  /* Main Content Layout */
+
   main {
     width: 90%;
     margin: 20px auto;
@@ -72,7 +72,7 @@
     padding-bottom: 5px;
   }
   
-  /* Invoice Dashboard Section */
+
   #invoice-dashboard .balance-summary {
     font-size: 1.2rem;
     margin-bottom: 15px;
@@ -90,7 +90,7 @@
     background: #fafafa;
   }
   
-  /* Payment Portal Section */
+
   #payment-portal form {
     display: flex;
     flex-direction: column;
@@ -119,7 +119,7 @@
     font-weight: bold;
   }
   
-  /* Receipts Section */
+
   .receipt-list {
     display: flex;
     flex-direction: column;
@@ -145,7 +145,7 @@
     background-color: var(--secondary-color);
   }
   
-  /* Footer Styles */
+
   footer {
     background-color: var(--primary-color);
     color: #fff;

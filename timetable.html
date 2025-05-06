@@ -8,19 +8,22 @@
   <script src="timetable.js"></script>
 </head>
 <body>
-  <!-- Header with common navigation -->
+  
   <header>
     <div class="container">
       <h1>Student Management System</h1>
       <nav>
         <ul>
-            <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="coursereg.html">Course Registration</a></li>
-          <li><a href="timetable.html"  class="active">Time Table</a></li>
-          <li><a href="gradebook.html" >Grade Book</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="coursereg.html" >Course Registration</a></li>
+          <li><a href="gradebook.html"  >Grade Book</a></li>
           <li><a href="studentgradebook.html" >Student Grade Book</a></li>
+          <li><a href="timetable.html" class="active">Timetable</a></li>
+          <li><a href="feetracking.html" >Fee Payment</a></li>
+          <li><a href="report-generation.html"  >Report Generation</a></li>
           <li><a href="profile.html">Profile</a></li>
           <li><a href="logout.html">Logout</a></li>
+          </ul>
           
          
           
@@ -28,9 +31,9 @@
     </div>
   </header>
 
-  <!-- Main Content -->
+ 
   <main>
-    <!-- Timetable Navigation Tabs -->
+    
     <section id="timetable-nav">
       <ul>
         <li><a href="#" class="active" data-view="weekly">Weekly Calendar</a></li>
@@ -39,13 +42,13 @@
       </ul>
     </section>
 
-    <!-- Timetable Content -->
+    
     <section id="timetable-content">
-      <!-- Weekly Calendar View -->
+      
       <div id="weekly" class="timetable-view active">
         <h2>Weekly Calendar</h2>
         <div class="calendar-grid">
-          <!-- Day Headers -->
+          
           <div class="grid-header">Time</div>
           <div class="grid-header">Monday</div>
           <div class="grid-header">Tuesday</div>
@@ -53,8 +56,7 @@
           <div class="grid-header">Thursday</div>
           <div class="grid-header">Friday</div>
 
-          <!-- Time slots and sample classes (using CSS Grid layout) -->
-          <!-- Example rows: each row represents a time slot (e.g., 8 AM, 9 AM, etc.) -->
+         
           <div class="time-label">8:00 AM</div>
           <div class="time-slot"></div>
           <div class="time-slot class-block" style="background-color: #18BC9C;" title="Mathematics - Room 101">Math</div>
@@ -69,11 +71,11 @@
           <div class="time-slot class-block" style="background-color: #9B59B6;" title="Chemistry - Room 103">Chemistry</div>
           <div class="time-slot"></div>
           
-          <!-- Additional rows can be added as needed -->
+         
         </div>
       </div>
 
-      <!-- List View -->
+      
       <div id="list" class="timetable-view">
         <h2>List View</h2>
         <table>
@@ -110,12 +112,12 @@
               <td>Room 103</td>
               <td>Dr. Davis</td>
             </tr>
-            <!-- Add additional rows as needed -->
+            
           </tbody>
         </table>
       </div>
 
-      <!-- Room Finder View -->
+      
       <div id="room" class="timetable-view">
         <h2>Room Finder</h2>
         <p>Search available rooms or view room schedules.</p>
@@ -124,12 +126,12 @@
           <button type="submit">Search</button>
         </form>
         <div id="roomResults">
-          <!-- Room search results will be dynamically injected here -->
+          
         </div>
       </div>
     </section>
 
-    <!-- Next Class Countdown (Mobile Friendly Section) -->
+    
     <section id="next-class">
       <h2>Next Class Countdown</h2>
       <div id="nextClassCountdown">
@@ -138,14 +140,14 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  
   <footer>
     <div class="container">
       <p>&copy; 2025 Student Management System. All Rights Reserved.</p>
     </div>
   </footer>
 
-  <!-- JavaScript Integration (logic can be extended in timetable-view.js) -->
+  
   <script src="timetable-view.js"></script>
 </body>
 </html>

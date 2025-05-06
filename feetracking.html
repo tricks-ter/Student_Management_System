@@ -7,36 +7,36 @@
   <link rel="stylesheet" href="fee-payment-tracking.css">
 </head>
 <body>
-  <!-- Header with common navigation -->
+  
   <header>
     <div class="container">
       <h1>Student Management System</h1>
       <nav>
         <ul>
           <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="coursereg.html">Course Registration</a></li>
-          <li><a href="gradebook.html" >Grade Book</a></li>
-          <li><a href="studentgradebook.html">Grade Book</a></li>
-          <li><a href="timetable.html">Timetable</a></li>
-          <li><a href="feetracking.html" class="active">Fee Payment</a></li>
-          <li><a href="report-generation.html">Report Generation</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="logout.html">Logout</a></li>
+            <li><a href="coursereg.html" >Course Registration</a></li>
+            <li><a href="gradebook.html" >Grade Book</a></li>
+            <li><a href="studentgradebook.html">Student Grade Book</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="feetracking.html" class="active" >Fee Payment</a></li>
+            <li><a href="report-generation.html">Report Generation</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="logout.html">Logout</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Main Content -->
+ 
   <main>
-    <!-- Invoice Dashboard Section -->
+    
     <section id="invoice-dashboard">
       <h2>Invoice Dashboard</h2>
       <div class="balance-summary">
         <p>Your current balance: <span id="currentBalance">$0.00</span></p>
       </div>
       <div class="invoice-list">
-        <!-- Invoices can be dynamically generated; here are sample items -->
+        
         <div class="invoice-item" data-invoice-id="inv101">
           <p>Invoice #INV101</p>
           <p>Amount: $500.00</p>
@@ -50,7 +50,7 @@
       </div>
     </section>
 
-    <!-- Payment Portal Section -->
+    
     <section id="payment-portal">
       <h2>Payment Portal</h2>
       <form id="paymentForm">
@@ -68,15 +68,15 @@
         <button type="submit" id="submitPayment">Make Payment</button>
       </form>
       <div id="paymentConfirmation">
-        <!-- Confirmation message after payment is processed -->
+       
       </div>
     </section>
 
-    <!-- Receipts Section -->
+ 
     <section id="payment-receipts">
       <h2>Payment Receipts</h2>
       <div class="receipt-list">
-        <!-- Receipts dynamically loaded; example receipt below -->
+       
         <div class="receipt-item" data-receipt-id="rpt101">
           <p>Receipt #RPT101</p>
           <p>Invoice: INV102</p>
@@ -88,14 +88,14 @@
     </section>
   </main>
 
-  <!-- Footer -->
+  
   <footer>
     <div class="container">
       <p>&copy; 2025 Student Management System. All Rights Reserved.</p>
     </div>
   </footer>
   
-  <!-- JavaScript integration (logic to be implemented in fee-payment-tracking.js) -->
+
   <script src="fee-payment-tracking.js"></script>
 </body>
 </html>

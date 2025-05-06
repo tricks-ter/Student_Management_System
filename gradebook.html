@@ -9,26 +9,29 @@
 
 </head>
 <body>
-  <!-- Header with common navigation -->
+  
   <header>
     <div class="container">
       <h1>Student Management System</h1>
       <nav>
         <ul>
           <li><a href="dashboard.html">Dashboard</a></li>
-          <li><a href="coursereg.html">Course Registration</a></li>
-          <li><a href="gradebook.html" class="active">Grade Book</a></li>
-          <li><a href="studentgradebook.html" >Student Grade Book</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="logout.html">Logout</a></li>
+            <li><a href="coursereg.html" >Course Registration</a></li>
+            <li><a href="gradebook.html" class="active"  >Grade Book</a></li>
+            <li><a href="studentgradebook.html">Student Grade Book</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="feetracking.html" >Fee Payment</a></li>
+            <li><a href="report-generation.html">Report Generation</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="logout.html">Logout</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
-  <!-- Main Content -->
+  
   <main>
-    <!-- Grade Entry Grid Section -->
+    
     <section id="grade-entry">
       <h2>Grade Entry Grid</h2>
       <table id="gradeTable">
@@ -43,7 +46,7 @@
           </tr>
         </thead>
         <tbody>
-          <!-- Sample row; rows will be dynamically added or modified via JavaScript -->
+          
           <tr data-entry-id="1">
             <td>John Doe</td>
             <td>Midterm Exam</td>
@@ -60,12 +63,12 @@
             <td>20</td>
             <td class="total">0</td>
           </tr>
-          <!-- Additional rows can be added here -->
+          
         </tbody>
       </table>
     </section>
     
-    <!-- Curve Calculator Section -->
+   
     <section id="curve-calculator">
       <h2>Curve Calculator</h2>
       <div class="curve-form">
@@ -74,11 +77,11 @@
         <button type="button" id="applyCurve">Apply Curve</button>
       </div>
       <div id="curveResult">
-        <!-- Calculated curve results will be displayed here -->
+        
       </div>
     </section>
     
-    <!-- Final Grades Section -->
+    
     <section id="final-grades">
       <h2>Final Grades</h2>
       <table id="finalGradeTable">
@@ -89,7 +92,7 @@
           </tr>
         </thead>
         <tbody>
-          <!-- JavaScript will populate this table with final grade calculations -->
+          
           <tr>
             <td>John Doe</td>
             <td id="finalGrade1">--</td>
@@ -104,14 +107,14 @@
     </section>
   </main>
   
-  <!-- Footer -->
+  
   <footer>
     <div class="container">
       <p>&copy; 2025 Student Management System. All Rights Reserved.</p>
     </div>
   </footer>
   
-  <!-- JavaScript integration (logic to be implemented in gradebook.js) -->
+  
   <script src="gradebook.js"></script>
 </body>
 </html>

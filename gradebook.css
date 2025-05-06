@@ -1,4 +1,4 @@
-/* Root variables for theme styling */
+
 :root {
     --primary-color: #2C3E50;
     --secondary-color: #18BC9C;
@@ -7,14 +7,14 @@
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
-  /* Reset box model and margins */
+ 
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  /* Body styles */
+ 
   body {
     font-family: var(--font-family);
     background-color: var(--light-gray);
@@ -22,7 +22,7 @@
     line-height: 1.6;
   }
   
-  /* Header styles */
+ 
   header {
     background-color: var(--primary-color);
     color: #fff;
@@ -55,7 +55,7 @@
     color: var(--secondary-color);
   }
   
-  /* Main content styling */
+  
   main {
     width: 90%;
     margin: 20px auto;
@@ -73,7 +73,7 @@
     padding-bottom: 5px;
   }
   
-  /* Grade Entry Grid Section */
+ 
   #grade-entry table {
     width: 100%;
     border-collapse: collapse;
@@ -91,7 +91,7 @@
     border-radius: 3px;
   }
   
-  /* Curve Calculator Section */
+
   #curve-calculator .curve-form {
     display: flex;
     align-items: center;
@@ -128,7 +128,7 @@
     min-height: 40px;
   }
   
-  /* Final Grades Section */
+  
   #final-grades table {
     width: 100%;
     border-collapse: collapse;
@@ -152,7 +152,7 @@
     background-color: var(--secondary-color);
   }
   
-  /* Footer styles */
+
   footer {
     background-color: var(--primary-color);
     color: #fff;

@@ -1,4 +1,4 @@
-/* Root variables for theme styling */
+
 :root {
     --primary-color: #2C3E50;
     --secondary-color: #18BC9C;
@@ -6,8 +6,7 @@
     --dark-gray: #7f8c8d;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  
-  /* Reset and base styles */
+
   * {
     margin: 0;
     padding: 0;
@@ -20,7 +19,7 @@
     line-height: 1.6;
   }
   
-  /* Header Styles */
+
   header {
     background-color: var(--primary-color);
     color: #fff;
@@ -53,7 +52,7 @@
     color: var(--secondary-color);
   }
   
-  /* Main Content Layout */
+
   main {
     width: 90%;
     margin: 20px auto;
@@ -71,7 +70,7 @@
     padding-bottom: 5px;
   }
   
-  /* Report Builder Section */
+  
   #report-builder form {
     display: flex;
     flex-direction: column;
@@ -100,7 +99,7 @@
     font-weight: bold;
   }
   
-  /* Template Library Section */
+
   .template-list {
     display: flex;
     flex-wrap: wrap;
@@ -114,7 +113,7 @@
     background: #fafafa;
   }
   
-  /* Batch Export Section */
+
   #batch-export button {
     padding: 10px 20px;
     border: none;
@@ -128,7 +127,7 @@
     background-color: var(--secondary-color);
   }
   
-  /* Footer Styles */
+ 
   footer {
     background-color: var(--primary-color);
     color: #fff;
