@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parent Portal</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7fbff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2980b9;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    main {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h1, h2 {
+      color: #2C3E50;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .child-selector {
+      margin-bottom: 15px;
+    }
+
+    select, textarea, input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #18BC9C;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #149f82;
+    }
+
+    .message-area {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: #f1f1f1;
+    }
+
+    .message {
+      background-color: #dff0ea;
+      padding: 8px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Parent Portal</h1>
+  </header>
+
+  <main>
+    <!-- Child Selector and Dashboard -->
+    <section class="card">
+      <h2>Dashboard</h2>
+      <div class="child-selector">
+        <label for="childSelect">Select Child:</label>
+        <select id="childSelect">
+          <option value="S001">Lamia Rahman</option>
+          <option value="S002">Samia Rahman</option>
+        </select>
+      </div>
+      <div id="childData">
+        <p><strong>Grade:</strong> A</p>
+        <p><strong>Attendance:</strong> 95%</p>
+        <p><strong>Last Activity:</strong> Science Project</p>
+      </div>
+
+    </section>
+
+    <!-- Activity Alerts -->
+    <section class="card">
+      <h2>Activity Alerts</h2>
+      <ul id="alertsList">
+        <li>Lamia received an A in Math.</li>
+        <li>Samia was absent on Monday.</li>
+        <li>New assignment posted for Science.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Message Teacher</h2>
+      <form id="messageForm">
+        <input type="text" id="teacherName" placeholder="Teacher Name" required />
+        <textarea id="messageText" placeholder="Type your message..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="message-area" id="messageArea"></div>
+    </section>
+  </main>
+
+
+  <script src="parentportal.js"></script>
+</body>
+</html>

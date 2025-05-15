@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Attendance Tracking</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f9ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2980b9;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    main {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h1, h2 {
+      color: #0e3961;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+    button {
+      background-color: #18BC9C;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #149f82;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Attendance Tracking</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Attendance Sheet</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="attendanceTable">
+        </tbody>
+      </table>
+      <button onclick="submitAttendance()">Submit Attendance</button>
+    </div>
+
+    <div class="card">
+      <h2>Submit Absence Note</h2>
+      <form id="absenceForm">
+        <input type="text" placeholder="Student ID" id="absentID" required />
+        <textarea placeholder="Reason for absence" id="reason" required></textarea>
+        <button type="submit">Submit Note</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="attendance.js"></script>
+
+</body>
+</html>
