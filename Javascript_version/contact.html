@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">EduSystem</div>
+        <ul class="nav-links">
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form id="contactForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formResponse" class="form-response"></p>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

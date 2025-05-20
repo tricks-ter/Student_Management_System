@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timetable</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo">EduSystem</div>
+    <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="landing.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="attendance.html">Attendance</a></li>
+      <li><a href="grades.html">Grades</a></li>
+      <li><a href="timetable.html" class="active">Timetable</a></li>
+      <li><a href="notifications.html">Notifications</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="logout.html">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Weekly Class Timetable</h1>
+    <div>
+      <button onclick="toggleView()">Toggle View</button>
+      <span id="nextClass" style="float: right;"></span>
+    </div>
+
+    <div id="gridView" class="timetable"></div>
+    <div id="listView" style="display: none;"></div>
+  </div>
+
+  <script src="timetable.js"></script>
+</body>
+
+</html>

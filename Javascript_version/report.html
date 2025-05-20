@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Report Generation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">EduSystem</div>
+        <button class="hamburger" id="hamburgerBtn">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="grades.html">Grades</a></li>
+            <li><a href="report.html" class="active">Reports</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="notifications.html">Notifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="logout.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Progress Report Generator</h1>
+
+        <label for="studentSelect">Select Student:</label>
+        <select id="studentSelect">
+            <!-- Options populated by JS -->
+        </select>
+
+        <label for="comment">Teacher Comment:</label>
+        <textarea id="comment" rows="4" placeholder="Enter comment for the student"></textarea>
+
+        <button id="generateBtn">Generate Report</button>
+
+        <div id="reportOutput" class="report-output"></div>
+    </div>
+
+    <script src="responsive.js"></script>
+    <script src="database.js"></script>
+    <script src="report.js"></script>
+</body>
+
+</html>
