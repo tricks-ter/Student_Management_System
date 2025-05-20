@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Absence Note</title>
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --secondary-color: #1abc9c;
+      --background-color: #f0f2f5;
+      --text-color: #333;
+      --light-bg: #fff;
+      --font-family: Arial, sans-serif;
+      --box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      --border-radius: 10px;
+      --button-bg: #34495e;
+      --button-hover-bg: var(--secondary-color);
+      --button-color: white;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-family);
+      background-color: var(--background-color);
+      color: var(--text-color);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--button-color);
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    main {
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      width: 100%;
+    }
+
+    .card {
+      background-color: var(--light-bg);
+      padding: 30px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      width: 450px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      font-size: 22px;
+      border-bottom: 3px solid var(--secondary-color);
+      padding-bottom: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px 15px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      border: 1.5px solid var(--primary-color);
+      border-radius: 6px;
+      font-size: 16px;
+      background-color: #fafafa;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      border-color: var(--secondary-color);
+      outline: none;
+      background-color: white;
+    }
+
+    button {
+      align-self: flex-end;
+      padding: 12px 25px;
+      background-color: var(--button-bg);
+      color: var(--button-color);
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: var(--button-hover-bg);
+    }
+
+    @media (max-width: 500px) {
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Absence Note</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Submit Absence Note</h2>
+      <form id="absenceForm">
+        <input type="text" id="studentId" placeholder="Your Student ID" required />
+        <input type="date" id="absenceDate" required />
+        <textarea id="reason" placeholder="Reason for absence" rows="4" required></textarea>
+        <button type="submit">Submit Note</button>
+      </form>
+    </div>
+  </main>
+
+<script src="absentnote.js"></script>>
+
+</body>
+</html>
